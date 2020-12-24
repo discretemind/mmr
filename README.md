@@ -15,4 +15,26 @@ Current Implementation has another indexing, what makes navigation over the node
  
  Another feature: No need to have all data for adding new elements to MMR.
  
+ # Requirements
  
+ Go 1.13+
+ 
+ # Install
+ 
+ ```
+ go get -u github.com/discretemind/mmr
+ ```
+ 
+ # Example:
+ 
+ ```
+	m := mmr.Merkle(blake2b.New256)
+
+	m.Add("test 1")
+    m.Add("test 2")
+    m.Add("test 3")
+    m.Add("test 4")
+
+    value3 := ""
+	m.Get(3, &value3)
+```
