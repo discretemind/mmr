@@ -1,5 +1,6 @@
 # Merkle Mountain Range
 
+## Introduction
 The Merkle mountain range (MMR) had been invented by Peter Todd 
 You can read about original implementation [here](https://github.com/opentimestamps/opentimestamps-server/blob/master/doc/merkle-mountain-range.md) and [here](https://github.com/mimblewimble/grin/blob/master/doc/mmr.md)
 
@@ -15,17 +16,17 @@ Current Implementation has another indexing, what makes navigation over the node
  
  Another feature: No need to have all data for adding new elements to MMR.
  
- # Requirements
+ ## Requirements
  
  Go 1.13+
  
- # Install
+ ## Install
  
  ```
  go get -u github.com/discretemind/mmr
  ```
  
- # Example:
+ ## Example:
  
  ```
 	m := mmr.Merkle(blake2b.New256)
@@ -38,3 +39,7 @@ Current Implementation has another indexing, what makes navigation over the node
     value3 := ""
 	m.Get(3, &value3)
 ```
+
+## License
+
+Apache License v2
