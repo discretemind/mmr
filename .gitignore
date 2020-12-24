@@ -1,0 +1,11 @@
+.idea
+key
+.zip
+
+vendor/*
+!vendor/vendor.json
+data
+keys
+go.sum
+/go.sum
+/app
